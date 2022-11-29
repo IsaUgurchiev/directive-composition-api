@@ -4,13 +4,13 @@ import {Directive, Input, ElementRef, SimpleChanges} from '@angular/core';
   selector: '[appText]',
 })
 export class TextDirective {
-  @Input() text!: string;
+  @Input() textContent!: string;
 
   constructor(private element: ElementRef) {}
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (changes['text']) {
-      (this.element.nativeElement as HTMLElement).textContent = this.text;
+    if (changes['textContent']) {
+      (this.element.nativeElement as HTMLElement).textContent = this.textContent;
     }
   }
 }

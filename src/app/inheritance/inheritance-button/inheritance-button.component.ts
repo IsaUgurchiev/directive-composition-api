@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, ViewChild} from '@angular/core';
 import {InheritanceDirective} from '../inheritance.directive';
 
 @Component({
@@ -9,6 +9,8 @@ import {InheritanceDirective} from '../inheritance.directive';
   imports: [InheritanceDirective]
 })
 export class InheritanceButtonComponent {
+  // @ViewChild(InheritanceDirective) inheritanceDirective!: InheritanceDirective
+
   onCalculated(value: number): void {
     alert(`You lost: ${value}$`);
   }

@@ -4,13 +4,13 @@ import {Directive, Input, ElementRef, SimpleChanges, Renderer2} from '@angular/c
   selector: '[appColor]',
 })
 export class ColorDirective {
-  @Input() color!: string;
+  @Input() backgroundColor!: string;
 
   constructor(private element: ElementRef, private renderer: Renderer2) {}
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (changes['color']) {
-      this.renderer.setStyle(this.element.nativeElement, 'background-color', this.color);
+    if (changes['backgroundColor']) {
+      this.renderer.setStyle(this.element.nativeElement, 'background-color', this.backgroundColor);
     }
   }
 }

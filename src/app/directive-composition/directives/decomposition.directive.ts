@@ -3,44 +3,44 @@ import { DecompositionCalculateDirective } from './decomposition-calculate.direc
 import { DecompositionTextDirective } from './decomposition-text.directive';
 import { DecompositionColorDirective } from './decomposition-color.directive';
 
-@Directive({
-  selector: '[appDecomposition]',
-  standalone: true,
-  hostDirectives: [
-    {
-      directive: DecompositionCalculateDirective,
-      inputs: ['salary'],
-      outputs: ['calculated']
-    },
-    {
-      directive: DecompositionColorDirective,
-      inputs: ['color'],
-    },
-    {
-      directive: DecompositionTextDirective,
-      inputs: ['text'],
-    },
-  ],
-})
-export class DecompositionDirective {}
-
 /*@Directive({
   selector: '[appDecomposition]',
   standalone: true,
   hostDirectives: [
     {
       directive: DecompositionCalculateDirective,
-      inputs: ['salary: appSalary'],
-      outputs: ['calculated: appCalculated']
+      inputs: ['calcSalary'],
+      outputs: ['calculated']
     },
     {
       directive: DecompositionColorDirective,
-      inputs: ['color: appColor'],
+      inputs: ['backgroundColor'],
     },
     {
       directive: DecompositionTextDirective,
-      inputs: ['text: appText'],
+      inputs: ['textContent'],
     },
   ],
 })
 export class DecompositionDirective {}*/
+
+@Directive({
+  selector: '[appDecomposition]',
+  standalone: true,
+  hostDirectives: [
+    {
+      directive: DecompositionCalculateDirective,
+      inputs: ['calcSalary: salary'],
+      outputs: ['calculated: calc']
+    },
+    {
+      directive: DecompositionColorDirective,
+      inputs: ['backgroundColor: color'],
+    },
+    {
+      directive: DecompositionTextDirective,
+      inputs: ['textContent: text'],
+    },
+  ],
+})
+export class DecompositionDirective {}
