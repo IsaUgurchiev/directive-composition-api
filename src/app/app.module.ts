@@ -12,7 +12,7 @@ import { ButtonModule } from './button/button.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ButtonModule
+    ButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { ButtonComponent } from './button.component';
-import { CalculateDirective } from './calculate.directive';
-import { ColorDirective } from './color.directive';
-import { TextDirective } from './text.directive';
+import { CalculateDirective } from './directives/calculate.directive';
+import { ColorDirective } from './directives/color.directive';
+import { TextDirective } from './directives/text.directive';
 
 @NgModule({
   declarations: [
