@@ -23,3 +23,24 @@ import { DecompositionColorDirective } from './decomposition-color.directive';
   ],
 })
 export class DecompositionDirective {}
+
+/*@Directive({
+  selector: '[appDecomposition]',
+  standalone: true,
+  hostDirectives: [
+    {
+      directive: DecompositionCalculateDirective,
+      inputs: ['salary: appSalary'],
+      outputs: ['calculated: appCalculated']
+    },
+    {
+      directive: DecompositionColorDirective,
+      inputs: ['color: appColor'],
+    },
+    {
+      directive: DecompositionTextDirective,
+      inputs: ['text: appText'],
+    },
+  ],
+})
+export class DecompositionDirective {}*/
