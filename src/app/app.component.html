@@ -1,10 +1,14 @@
 <div class="content" role="main">
   <a href="/"><h1>Directive Composition</h1></a>
-
-  <div class="card-container">
-    <a class="card" routerLink="/button" routerLinkActive="active">Button</a>
-    <a class="card" routerLink="/directive-composition" routerLinkActive="active">Directive Composition</a>
-  </div>
 </div>
 
-<router-outlet></router-outlet>
+<div>
+  <ul>
+    <li><a routerLink="/button" routerLinkActive="active">Button</a></li>
+    <li><a routerLink="/directive-composition" routerLinkActive="active">Directive Composition</a></li>
+  </ul>
+</div>
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div>

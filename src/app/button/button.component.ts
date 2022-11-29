@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./button.component.scss']
 })
 export class ButtonComponent {
-
+  onCalculated(value: number): void {
+    alert(`Your Salary is: ${value}$`);
+  }
 }
