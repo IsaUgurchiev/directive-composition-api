@@ -5,6 +5,7 @@ import { CompostionComponent } from './directive-composition/simple/compostion.c
 import { RenameCompositionComponent } from './directive-composition/rename/rename-composition.component';
 import { WrapperCompostion } from './directive-composition/wrapper/wrapper-compostion';
 import { PickDirectivesComponent } from './directive-composition/pick-directives/pick-directives.component';
+import { DuplicateParamsComposition } from './directive-composition/duplicate-params/duplicate-params-composition';
 
 const routes: Routes = [
   { path: 'button', component: ButtonComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'rename-composition', component: RenameCompositionComponent },
   { path: 'wrapper-composition', component: WrapperCompostion },
   { path: 'pick-directives', component: PickDirectivesComponent },
+  { path: 'duplicate-params-composition', component: DuplicateParamsComposition },
 ];
 
 @NgModule({

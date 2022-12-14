@@ -1,4 +1,4 @@
-import { Directive, ElementRef, Input, Renderer2, SimpleChanges } from '@angular/core';
+import { Directive, ElementRef, Input, Renderer2, SimpleChanges, OnChanges } from '@angular/core';
 import { RenameCompositionDirective } from './rename-composition.directive';
 
 @Directive({
@@ -10,7 +10,7 @@ import { RenameCompositionDirective } from './rename-composition.directive';
     }
   ],
 })
-export class WrapperCompositionDirective {
+export class WrapperCompositionDirective implements OnChanges {
   @Input() fontColor!: string;
 
   constructor(private element: ElementRef, private renderer: Renderer2) {}

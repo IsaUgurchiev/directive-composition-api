@@ -1,5 +1,5 @@
 import { Component, Directive, ViewChild } from '@angular/core';
-import { WrapperCompositionDirective } from '../directives/wrapper-compisition.directive';
+import { WrapperCompositionDirective } from '../directives/wrapper-composition.directive';
 import { RenameCompositionDirective} from '../directives/rename-composition.directive';
 import { CalculateDirective } from '../directives/calculate.directive';
 import { ColorDirective } from '../directives/color.directive';

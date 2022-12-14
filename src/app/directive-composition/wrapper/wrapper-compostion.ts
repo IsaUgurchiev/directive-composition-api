@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { WrapperCompositionDirective } from '../directives/wrapper-compisition.directive';
+import { WrapperCompositionDirective } from '../directives/wrapper-composition.directive';
 
 @Component({
   templateUrl: './wrapper-composition.component.html',

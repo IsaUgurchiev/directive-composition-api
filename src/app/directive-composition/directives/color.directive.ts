@@ -1,10 +1,10 @@
-import {Directive, Input, ElementRef, SimpleChanges, Renderer2} from '@angular/core';
+import { Directive, Input, ElementRef, SimpleChanges, Renderer2, OnChanges } from '@angular/core';
 
 @Directive({
   selector: '[appColor]',
   standalone: true,
 })
-export class ColorDirective {
+export class ColorDirective implements OnChanges {
   @Input() backgroundColor!: string;
 
   constructor(private element: ElementRef, private renderer: Renderer2) {}

@@ -1,4 +1,4 @@
-import {Directive, HostListener, Output, EventEmitter, Input} from '@angular/core';
+import { Directive, HostListener, Input, Output, EventEmitter } from '@angular/core';
 
 const TAX = 15;
 

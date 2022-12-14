@@ -1,9 +1,9 @@
-import {Directive, Input, ElementRef, SimpleChanges} from '@angular/core';
+import { Directive, Input, ElementRef, SimpleChanges, OnChanges } from '@angular/core';
 
 @Directive({
   selector: '[appText]',
 })
-export class TextDirective {
+export class TextDirective implements OnChanges {
   @Input() textContent!: string;
 
   constructor(private element: ElementRef) {}
