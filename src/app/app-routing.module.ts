@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ButtonComponent } from './button/button.component';
-import { DecompositionButtonComponent } from './directive-composition/decomposition-button.component';
-import { InheritanceButtonComponent } from './inheritance/inheritance-button/inheritance-button.component';
+import { CompostionComponent } from './directive-composition/simple/compostion.component';
+import { RenameCompositionComponent } from './directive-composition/rename/rename-composition.component';
+import { WrapperCompostion } from './directive-composition/wrapper/wrapper-compostion';
 
 const routes: Routes = [
   { path: 'button', component: ButtonComponent },
-  { path: 'directive-composition', component: DecompositionButtonComponent },
-  { path: 'inheritance-directive-composition', component: InheritanceButtonComponent },
+  { path: 'composition', component: CompostionComponent },
+  { path: 'rename-composition', component: RenameCompositionComponent },
+  { path: 'wrapper-composition', component: WrapperCompostion },
 ];
 
 @NgModule({

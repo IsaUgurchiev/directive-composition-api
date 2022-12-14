@@ -3,10 +3,10 @@ import {Directive, HostListener, Output, EventEmitter, Input} from '@angular/cor
 const TAX = 15;
 
 @Directive({
-  selector: '[appDecomposotionCalculate]',
+  selector: '[appCalculate]',
   standalone: true,
 })
-export class DecompositionCalculateDirective {
+export class CalculateDirective {
   @Input() calcSalary = 0;
 
   @Output() calculated = new EventEmitter();

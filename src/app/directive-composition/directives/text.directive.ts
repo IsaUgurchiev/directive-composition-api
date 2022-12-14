@@ -1,10 +1,10 @@
 import {Directive, Input, ElementRef, SimpleChanges} from '@angular/core';
 
 @Directive({
-  selector: '[appDecompositionText]',
+  selector: '[appText]',
   standalone: true,
 })
-export class DecompositionTextDirective {
+export class TextDirective {
   @Input() textContent!: string;
 
   constructor(private element: ElementRef) {}

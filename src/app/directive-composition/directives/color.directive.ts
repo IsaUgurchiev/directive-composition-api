@@ -1,10 +1,10 @@
 import {Directive, Input, ElementRef, SimpleChanges, Renderer2} from '@angular/core';
 
 @Directive({
-  selector: '[appDecompositionColor]',
+  selector: '[appColor]',
   standalone: true,
 })
-export class DecompositionColorDirective {
+export class ColorDirective {
   @Input() backgroundColor!: string;
 
   constructor(private element: ElementRef, private renderer: Renderer2) {}
