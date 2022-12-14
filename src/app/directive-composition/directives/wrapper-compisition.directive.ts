@@ -10,7 +10,7 @@ import { RenameCompositionDirective } from './rename-composition.directive';
     }
   ],
 })
-export class WrapperCompisitionDirective {
+export class WrapperCompositionDirective {
   @Input() fontColor!: string;
 
   constructor(private element: ElementRef, private renderer: Renderer2) {}

@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { WrapperCompisitionDirective } from '../directives/wrapper-compisition.directive';
+import { WrapperCompositionDirective } from '../directives/wrapper-compisition.directive';
 
 @Component({
   templateUrl: './wrapper-composition.component.html',
   standalone: true,
-  imports: [WrapperCompisitionDirective]
+  imports: [WrapperCompositionDirective]
 })
 export class WrapperCompostion {
   onCalculated(value: number): void {
